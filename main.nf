@@ -8,8 +8,6 @@ howMany = Channel.from( 1   ..params.ntasks )
 process pyTask {
     echo true 
     container 'quay.io/biocontainers/python:3.8.3'
-    cpus 1
-    memory  '1 GB'
     time '1h'
     
     input: 
